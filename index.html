@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container-header">
+      <div class="dice-frame">
+        <img src="" alt="" id="dice1" class="img" />
+        <img src="" alt="" id="dice2" class="img" />
+        <img src="" alt="" id="dice3" class="img" />
+      </div>
+      <button id="roll-btn" class="roll-btn" onclick="rollDice()">Quay</button>
+    </div>
+    <div class="container-main">
+      <div class="choose" id="choose" onclick="Vote()">
+        <div class="vote number1" id="number1">0</div>
+        <img src="./img/bau.png" alt="" class="img" id="img1" />
+      </div>
+      <div class="choose" id="choose2" onclick="">
+        <div class="vote number2" id="number2">0</div>
+        <img src="./img/cua.png" alt="" class="img" id="img2" />
+      </div>
+      <div class="choose" id="choose3" onclick="">
+        <div class="vote number3" id="number3">0</div>
+        <img src="./img/tom.png" alt="" class="img" id="img3" />
+      </div>
+      <div class="choose" id="choose4" onclick="">
+        <div class="vote number4" id="number4">0</div>
+        <img src="./img/ca.png" alt="" class="img" id="img4" />
+      </div>
+      <div class="choose" id="choose5" onclick="">
+        <div class="vote number5" id="number5">0</div>
+        <img src="./img/huou.png" alt="" class="img" id="img5" />
+      </div>
+      <div class="choose" id="choose6" onclick="">
+        <div class="vote number6" id="number6">0</div>
+        <img src="./img/ga.png" alt="" class="img" id="img6" />
+      </div>
+    </div>
+    <div class="container-bottom">
+      <div class="Attention">
+        <div>Lưu ý:</div>
+        <div>
+          - Số lần đặt ở 1 'Hình' sẽ là số lần xuất hiện của các 'Hình' trên kết
+          quả
+        </div>
+        <div>- Tổng số điểm đặt trong 1 lần tối đa là 3</div>
+      </div>
+      <button class="reset-btn" id="reset-btn" onclick="resetVotes()">
+        Đặt lại
+      </button>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
